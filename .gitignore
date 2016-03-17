@@ -762,3 +762,20 @@ proguard/
 # Android Studio Navigation editor temp files
 .navigation/
 
+# Ember
+# compiled output
+/dist
+/tmp
+
+# dependencies
+/node_modules
+/bower_components
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log
+testem.log
+
