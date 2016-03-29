@@ -76,6 +76,10 @@ body {
     @include transition(color 0.30s ease 0.15s);
 }
 
+.naviconactive {
+    color: $accent;
+}
+
 .sidenav {
     position: absolute;
     background-color: white;
