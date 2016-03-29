@@ -73,6 +73,12 @@ $accent: #00bfa5;
     @include transition(left 0.30s ease 0.15s);
 }
 
+.sidenavoptions {
+    width: 100%;
+    margin-top: 73px;
+    display: table;
+}
+
 .appcontent {
     margin-left: 0px;
     @include transition(margin-left 0.30s ease 0.15s);
