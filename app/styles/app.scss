@@ -35,6 +35,10 @@ $accent: #00bfa5;
     @include transition(padding-left 0.30s ease 0.15s);
 }
 
+.navtitlecontaineractive {
+    padding-left: $sidenavwidth + 16 + 18;
+}
+
 body {
     overflow: hidden;
 }
