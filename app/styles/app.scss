@@ -9,6 +9,14 @@
     transition: $spec;
 }
 
+@mixin box-shadow($spec...) {
+    -webkit-box-shadow: $spec;
+    -moz-box-shadow: $spec;
+    -o-box-shadow: $spec;
+    -ms-box-shadow: $spec;
+    box-shadow: $spec;
+}
+
 .navtitle {
     font-size:1.5rem !important;
     color:white;
