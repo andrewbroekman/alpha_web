@@ -95,6 +95,18 @@ body {
     left: 0px;
 }
 
+.sidenavcell {
+    font-weight: 500;
+    font-size: 13px;
+    color: $accent;
+    min-width: $sidenavwidth;
+    height: 48px;
+    vertical-align: middle;
+    padding-left: 16px;
+    cursor: pointer;
+    display: table-cell;
+}
+
 .sidenavoptions {
     width: 100%;
     margin-top: 73px;
