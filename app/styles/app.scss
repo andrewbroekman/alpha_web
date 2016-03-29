@@ -91,6 +91,10 @@ body {
     @include transition(left 0.30s ease 0.15s);
 }
 
+.sidenavactive {
+    left: 0px;
+}
+
 .sidenavoptions {
     width: 100%;
     margin-top: 73px;
