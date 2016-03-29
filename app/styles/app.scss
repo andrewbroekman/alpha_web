@@ -1,6 +1,14 @@
 @import 'materialize';
 @import 'ember-cli-materialize';
 
+@mixin transition($spec...) {
+    -webkit-transition: $spec;
+    -moz-transition: $spec;
+    -o-transition: $spec;
+    -ms-transition: $spec;
+    transition: $spec;
+}
+
 .navtitlecontainer {
     float: left;
     padding-left: 82px;
