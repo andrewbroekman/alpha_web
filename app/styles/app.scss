@@ -1,2 +1,6 @@
 @import 'materialize';
 @import 'ember-cli-materialize';
+.navbar {
+    background-color: #3f51b5;
+    min-height: 64px;
+}
