@@ -105,3 +105,7 @@ body {
     margin-left: 0px;
     @include transition(margin-left 0.30s ease 0.15s);
 }
+
+.appcontentactive {
+    margin-left: $sidenavwidth;
+}
