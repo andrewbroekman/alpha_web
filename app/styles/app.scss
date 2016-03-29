@@ -119,6 +119,12 @@ body {
     display: table;
 }
 
+.sidenavcell.active {
+    background-color: rgba($accent, 0.1);
+    width: 100%;
+    color: $accent;
+}
+
 .appcontent {
     margin-left: 0px;
     @include transition(margin-left 0.30s ease 0.15s);
