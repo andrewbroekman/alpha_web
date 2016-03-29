@@ -50,6 +50,16 @@
     @include transition(color 0.30s ease 0.15s);
 }
 
+.sidenav {
+    position: absolute;
+    background-color: white;
+    top: 0px;
+    left: - $sidenavwidth - $sidenavblurdistance;
+    min-height: 100vh;
+    opacity: 1;
+    @include transition(left 0.30s ease 0.15s);
+}
+
 .appcontent {
     margin-left: 0px;
     @include transition(margin-left 0.30s ease 0.15s);
