@@ -40,6 +40,16 @@
     @include transition(opacity 0.30s ease 0.15s, visibility 0.30s ease 0.15s);
 }
 
+.navicon {
+    position: absolute;
+    top: 10px;
+    left: 18px;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    @include transition(color 0.30s ease 0.15s);
+}
+
 .appcontent {
     margin-left: 0px;
     @include transition(margin-left 0.30s ease 0.15s);
