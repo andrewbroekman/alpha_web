@@ -69,6 +69,7 @@ $accent: #00bfa5;
     left: - $sidenavwidth - $sidenavblurdistance;
     min-height: 100vh;
     opacity: 1;
+    @include box-shadow(0px 0px $sidenavblurdistance 0px rgba(0,0,0,0.3));
     @include transition(left 0.30s ease 0.15s);
 }
 
