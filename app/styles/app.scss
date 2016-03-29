@@ -35,6 +35,10 @@ $accent: #00bfa5;
     @include transition(padding-left 0.30s ease 0.15s);
 }
 
+body {
+    overflow: hidden;
+}
+
 .navbar {
     background-color: #3f51b5;
     min-height: 64px;
