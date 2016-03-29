@@ -1,5 +1,12 @@
 @import 'materialize';
 @import 'ember-cli-materialize';
+
+.navtitlecontainer {
+    float: left;
+    padding-left: 82px;
+    @include transition(padding-left 0.30s ease 0.15s);
+}
+
 .navbar {
     background-color: #3f51b5;
     min-height: 64px;
