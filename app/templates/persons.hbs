@@ -1,0 +1,55 @@
+{{#md-navbar name='Persons' class='indigo center'}}
+{{/md-navbar}}
+
+<div class="input-field">
+          <input id="search" type="search" required>
+          <label for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+</div>
+{{#md-table content=content class='bordered centered responsive-table' as |row|}}
+  {{#md-table-col row=row key='name' header='First name'}}
+    {{row.name}}
+  {{/md-table-col}}
+
+  {{#md-table-col row=row key='surname' header='Surname'}}
+    {{row.surname}}
+  {{/md-table-col}}
+
+  {{#md-table-col row=row key='email' header='Email'}}
+    {{row.email}}
+  {{/md-table-col}}
+
+  {{#md-table-col row=row key='organizations' header='Organizations'}}
+    {{md-select content=row.organizations
+    value=name
+    label="Organization"
+    prompt="Please choose..."
+    optionLabelPath="content.name"
+    optionValuePath="content" class="col s12"}}
+  {{/md-table-col}}
+
+  {{#md-table-col row=row key='researcherCategory' header='Reasercher category'}}
+    {{md-select content=row.researcherCategory
+    value=name
+    label="Reasercher category"
+    prompt="Please choose..."
+    optionLabelPath="content.name"
+    optionValuePath="content" class="col s12"}}
+  {{/md-table-col}}
+
+  {{#md-table-col row=row key='researchGroup' header='Research group association'}}
+    {{md-btn class='teal white-text' text='View'}}
+  {{/md-table-col}}
+
+{{/md-table}}
+
+<--! first
+surname
+email?
+organization*
+research group association*
+ - Role
+ - start date
+ - end date?
+researcher category
+--!>
