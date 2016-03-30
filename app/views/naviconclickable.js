@@ -1,5 +1,8 @@
+/*globals $:false */
+import Ember from 'ember';
+
 export default Ember.View.extend({
-    click: function(evt) {
+    click: function() {
         if ($('#navicon').hasClass("naviconactive"))
         {
             //make inactive
