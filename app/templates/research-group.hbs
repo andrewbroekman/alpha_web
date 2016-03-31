@@ -1,17 +1,15 @@
-<nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Research Group Management</a>
-      <ul class="right hide-on-med-and-down">
-        <li>{{#link-to 'researchGroup.addResearchGroup'}}Add Research Group{{/link-to}}</li>
-        <li>{{#link-to 'researchGroup.suspendResearchGroup'}}Suspend Research Group{{/link-to}}</li>
-        <li>{{#link-to 'researchGroup.reactivateResearchGroup'}}Reactivate Research Group{{/link-to}}</li>
-      </ul>
+{{#md-navbar name='Research Groups' class='indigo' homeRoute='researchGroup'}}
+  <!-- A workaround to get the "active" class
+    to apply to the active <li> automatically -->
+  {{#link-to 'researchGroup.addResearchGroup' tagName='li'}}
+    {{link-to 'Add' 'researchGroup.addResearchGroup'}}
+  {{/link-to}}
+  {{#link-to 'researchGroup.suspendResearchGroup' tagName='li'}}
+    {{link-to 'Suspend' 'researchGroup.suspendResearchGroup'}}
+  {{/link-to}}
+  {{#link-to 'researchGroup.reactivateResearchGroup' tagName='li'}}
+    {{link-to 'Reactivate' 'researchGroup.reactivateResearchGroup'}}
+  {{/link-to}}
+{{/md-navbar}}
 
-      <ul id="nav-mobile" class="side-nav">
-        <li>{{#link-to 'researchGroup.addResearchGroup'}}Add Research Group{{/link-to}}</li>
-        <li>{{#link-to 'researchGroup.suspendResearchGroup'}}Suspend Research Group{{/link-to}}</li>
-        <li>{{#link-to 'researchGroup.reactivateResearchGroup'}}Reactivate Research Group{{/link-to}}</li>
-      </ul>
-      <a href="JavaScript:void(0)" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
 {{outlet}}

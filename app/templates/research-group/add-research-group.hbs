@@ -1,7 +1,23 @@
-<form action="POST">
-	<div class="input-field">
-			<label for="name">Research Group Name: </label>
-	        <input id="name" type="text" required>
-	        <i class="material-icons">Add Research Group</i>
-	</div>
-</form>
+ <div class="row">
+ 	<form class="col s12" style="padding-top:20px" action="POST">
+ 		<div class="row">
+ 			<div class="input-field col s12 m6">
+ 				<input placeholder="Placeholder" id="research-group-name" type="text" class="validate">
+ 				<label for="research-group-name">Research Group Name</label>
+ 			</div>
+ 		
+ 		
+ 				{{md-select content=content
+ 				value=framework
+ 				label="Research Group Parent"
+ 				prompt="Choose a Group Parent.."
+ 				optionLabelPath="content.name"
+ 				optionValuePath="content" class="col s12 m6"}}
+ 		</div>
+ 		<div class="row">
+ 			<div class="input-field right-align col s12 m12">
+ 				{{md-btn class='green white-text' text='Add Research Group'}}
+ 			</div> 
+ 		</div>
+ 	</form>
+ </div>
