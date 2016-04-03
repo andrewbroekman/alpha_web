@@ -1,0 +1,15 @@
+{{#md-navbar name='Research Groups' class='indigo' homeRoute='researchGroup'}}
+  <!-- A workaround to get the "active" class
+    to apply to the active <li> automatically -->
+  {{#link-to 'researchGroup.addResearchGroup' tagName='li'}}
+    {{link-to 'Add' 'researchGroup.addResearchGroup'}}
+  {{/link-to}}
+  {{#link-to 'researchGroup.suspendResearchGroup' tagName='li'}}
+    {{link-to 'Suspend' 'researchGroup.suspendResearchGroup'}}
+  {{/link-to}}
+  {{#link-to 'researchGroup.reactivateResearchGroup' tagName='li'}}
+    {{link-to 'Reactivate' 'researchGroup.reactivateResearchGroup'}}
+  {{/link-to}}
+{{/md-navbar}}
+
+{{outlet}}

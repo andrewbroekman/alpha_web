@@ -6,7 +6,12 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-	this.route('navexample');
+  this.route('navexample');
+  this.route('researchGroup', function() {
+    this.route('suspendResearchGroup');
+    this.route('reactivateResearchGroup');
+    this.route('addResearchGroup');
+  });
 });
 
 export default Router;
