@@ -8,7 +8,9 @@
     {{yield}}
 </div>
 
-<div id="navoverlay" data-ember-modal-dialog-overlay="" class="navoverlay lean-modal"></div>
+{{#view "navoverlayclickable"}}
+    <div id="navoverlay" data-ember-modal-dialog-overlay="" class="navoverlay lean-modal"></div>
+{{/view}}
 
 <div id="sidenav" class="sidenav">
     <div class="sidenavoptions">
