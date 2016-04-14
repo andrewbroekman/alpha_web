@@ -1,5 +1,34 @@
 export default function() {
+	this.get('/members', function() {
+    return {
+        data: [{
+            type: 'member',
+            id: 1,
+            "attributes": {
+                name: 'Marie', surname: 'Curie', email: 'mariecurie@loremipsum.com', researcherCategory: [{name:'Prof'},{name:'Student'}]
+            }
+        },
 
+        {
+            type: 'member',
+            id: 2,
+            "attributes": {
+                name: 'Mae', surname: 'Jemison', email: 'mae@loremipsum.com', researcherCategory: [{name:'Prof'},{name:'Student'}]
+            }
+        },
+
+        {
+            type: 'member',
+            id: 3,
+            "attributes": {
+                name: 'Albert', surname:'Hofmann', email: 'albert@loremipsum.com', researcherCategory: [{name:'Prof'},{name:'Student'}]
+            }
+        }
+
+
+        ]
+    };
+  });
   // These comments are here to help you get started. Feel free to delete them.
 
   /*
