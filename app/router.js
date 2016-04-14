@@ -15,6 +15,7 @@ Router.map(function() {
   this.route('researcherCategory', function() {
     this.route('addResearcherCategory');
     this.route('modifyResearcherCategory');
+    this.route('selectResearcherCategory');
   });
 });
 

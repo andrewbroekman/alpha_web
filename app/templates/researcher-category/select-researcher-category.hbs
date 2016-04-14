@@ -4,11 +4,14 @@
           <i class="material-icons">close</i>
 </div>
 {{#md-table content=content class='bordered centered' as |row|}}
-  {{#md-table-col row=row key='name' header='Reasearch Group Name'}}
+  {{#md-table-col row=row key='name' header='Reasearcher Category'}}
     {{row.name}}
   {{/md-table-col}}
 
   {{#md-table-col row=row key='researchGroup' header='Action'}}
-    {{md-btn class='yellow white-text' text='Reactivate'}}
+    {{#link-to 'researcherCategory.modifyResearcherCategory'}}
+    {{md-btn class='red white-text' text='Suspend'}}
+    {{/link-to}}
   {{/md-table-col}}
+
 {{/md-table}}
