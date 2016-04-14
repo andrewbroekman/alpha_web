@@ -29,6 +29,30 @@ export default function() {
         ]
     };
   });
+
+    this.get('/publications', function() {
+    return {
+        data: [
+        {
+            type: 'publication',
+            id: 1,
+            "attributes": {
+                name: 'Publication 1'
+            }
+        },
+
+        {
+            type: 'publication',
+            id: 2,
+            "attributes": {
+                name: 'Publication 2'
+            }
+        }
+
+        ]
+    };
+  });
+
   // These comments are here to help you get started. Feel free to delete them.
 
   /*
