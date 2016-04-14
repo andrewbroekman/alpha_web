@@ -1,58 +1,60 @@
 {{#navigation-component title='Persons' }}
+	<div class="input-field">
+		<input id="search" type="search" required>
+		<label for="search"><i class="material-icons">search</i></label>
+		<i class="material-icons">close</i>
+	</div>
+	
+	
+	{{#md-table content=content class='bordered centered responsive-table' as |row|}}
+		{{#md-table-col row=row key='name' header='First name'}}
+			{{row.name}}
+		{{/md-table-col}}
 
-<div class="input-field">
-          <input id="search" type="search" required>
-          <label for="search"><i class="material-icons">search</i></label>
-          <i class="material-icons">close</i>
-</div>
-{{#md-table content=content class='bordered centered responsive-table' as |row|}}
-  {{#md-table-col row=row key='name' header='First name'}}
-    {{row.name}}
-  {{/md-table-col}}
+		{{#md-table-col row=row key='surname' header='Surname'}}
+			{{row.surname}}
+		{{/md-table-col}}
 
-  {{#md-table-col row=row key='surname' header='Surname'}}
-    {{row.surname}}
-  {{/md-table-col}}
+		{{#md-table-col row=row key='email' header='Email'}}
+			{{row.email}}
+		{{/md-table-col}}
 
-  {{#md-table-col row=row key='email' header='Email'}}
-    {{row.email}}
-  {{/md-table-col}}
+		{{#md-table-col row=row key='organizations' header='Organizations'}}
+			{{md-select content=row.organizations
+				value=name
+				label="Organization"
+				prompt="Please choose..."
+				optionLabelPath="content.name"
+				optionValuePath="content" class="col s12"}}
+		{{/md-table-col}}
 
-  {{#md-table-col row=row key='organizations' header='Organizations'}}
-    {{md-select content=row.organizations
-    value=name
-    label="Organization"
-    prompt="Please choose..."
-    optionLabelPath="content.name"
-    optionValuePath="content" class="col s12"}}
-  {{/md-table-col}}
+		{{#md-table-col row=row key='researcherCategory' header='Reasercher category'}}
+			{{md-select content=row.researcherCategory
+				value=name
+				label="Reasercher category"
+				prompt="Please choose..."
+				optionLabelPath="content.name"
+				optionValuePath="content" class="col s12"}}
+		{{/md-table-col}}
 
-  {{#md-table-col row=row key='researcherCategory' header='Reasercher category'}}
-    {{md-select content=row.researcherCategory
-    value=name
-    label="Reasercher category"
-    prompt="Please choose..."
-    optionLabelPath="content.name"
-    optionValuePath="content" class="col s12"}}
-  {{/md-table-col}}
-
-  {{#md-table-col row=row key='researchGroup' header='Research group association'}}
-    {{md-btn class='teal white-text' text='View'}}
-  {{/md-table-col}}
-
-{{/md-table}}
-
-<--! first
-surname
-email?
-organization*
-research group association*
- - Role
- - start date
- - end date?
-researcher category
---!>
+		{{#md-table-col row=row key='researchGroup' header='Research group association'}}
+			{{md-btn class='teal white-text' text='View' action="OpenModel"}}
+		{{/md-table-col}}
+	{{/md-table}}
+	
+	{{#if modalIsOpen}}
+		{{#md-modal close='closeModal'}}
+			<div class="modal-content">
+				<h4>Ohai there!</h4>
+				<p>Star ember-cli-materialize if you love it on
+					<a href="https://github.com/truenorth/ember-cli-materialize">github</a>!
+				</p>
+			</div>
+			<div class="modal-footer">
+				<a class="modal-action modal-close waves-effect waves-orange btn-flat agree-button" {{action 'closeModal'}}>
+					Done!
+				</a>
+			</div>
+		{{/md-modal}}
+	{{/if}}
 {{/navigation-component }}
-
-{{!-- ember-cli-materialize modal container --}}
-{{md-modal-container}}
