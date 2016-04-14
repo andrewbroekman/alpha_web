@@ -1,6 +1,13 @@
-{{#md-navbar name='Research Groups' class='indigo' homeRoute='researchGroup'}}
-  <!-- A workaround to get the "active" class
-    to apply to the active <li> automatically -->
+{{#md-navbar name='Researcher Support System' class='indigo' homeRoute='researchGroup'}}
+  {{#link-to 'researchGroup' tagName='li'}}
+    {{link-to 'Research Group Manager' 'researchGroup'}}
+  {{/link-to}}
+  {{#link-to 'researcherCategory' tagName='li'}}
+    {{link-to 'Researcher Category Manager' 'researcherCategory'}}
+  {{/link-to}}
+{{/md-navbar}}
+
+{{#md-navbar name='Research Groups' class='green' homeRoute='researchGroup'}}
   {{#link-to 'researchGroup.addResearchGroup' tagName='li'}}
     {{link-to 'Add' 'researchGroup.addResearchGroup'}}
   {{/link-to}}

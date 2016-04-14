@@ -1,0 +1,23 @@
+ <div class="row">
+ 	<form class="col s12" style="padding-top:20px" action="POST">
+ 		<div class="row">
+ 			<div class="input-field col s12 m6">
+ 				<input placeholder="Placeholder" id="research-group-name" type="text" class="validate">
+ 				<label for="research-group-name">Research Different</label>
+ 			</div>
+ 		
+ 		
+ 				{{md-select content=content
+ 				value=framework
+ 				label="Research Group Parent"
+ 				prompt="Choose a Group Parent.."
+ 				optionLabelPath="content.name"
+ 				optionValuePath="content" class="col s12 m6"}}
+ 		</div>
+ 		<div class="row">
+ 			<div class="input-field right-align col s12 m12">
+ 				{{md-btn class='green white-text' text='Add Research Group'}}
+ 			</div> 
+ 		</div>
+ 	</form>
+ </div>
