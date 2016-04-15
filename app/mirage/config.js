@@ -1,5 +1,62 @@
 export default function() {
 
+  this.get('/research-groups', function() {
+    return {
+        data: [
+        //Research Groups
+        {
+            type: 'research-group',
+            id: 1,
+            "attributes": {
+                name: 'Computer Science', parent: 0
+            }
+        },
+
+        {
+            type: 'research-group',
+            id: 2,
+            "attributes": {
+                name: 'Networks', parent: 1
+            }
+        },
+
+        {
+            type: 'research-group',
+            id: 3,
+            "attributes": {
+                name: 'Artificial Intelligence', parent: 1
+            }
+        },
+        //Researcher Categories
+        {
+            type: 'researcher-category',
+            id: 1,
+            "attributes": {
+                name: 'Professor'
+            }
+        },
+
+        {
+            type: 'researcher-category',
+            id: 2,
+            "attributes": {
+                name: 'Post-Graduate'
+            }
+        },
+
+        {
+            type: 'researcher-category',
+            id: 3,
+            "attributes": {
+                name: 'Doctor'
+            }
+        }
+
+
+        ]
+    };
+  });
+
   // These comments are here to help you get started. Feel free to delete them.
 
   /*

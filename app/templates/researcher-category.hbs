@@ -1,0 +1,19 @@
+{{#md-navbar name='Researcher Support System' class='indigo' homeRoute='researcherCategory'}}
+  {{#link-to 'researchGroup' tagName='li'}}
+    {{link-to 'Research Group Manager' 'researchGroup'}}
+  {{/link-to}}
+  {{#link-to 'researcherCategory' tagName='li'}}
+    {{link-to 'Researcher Category Manager' 'researcherCategory'}}
+  {{/link-to}}
+{{/md-navbar}}
+
+{{#md-navbar name='Research Groups' class='green' homeRoute='researcherCategory'}}
+  {{#link-to 'researcherCategory.addResearcherCategory' tagName='li'}}
+    {{link-to 'Add' 'researcherCategory.addResearcherCategory'}}
+  {{/link-to}}
+  {{#link-to 'researcherCategory.selectResearcherCategory' tagName='li'}}
+    {{link-to 'Modify' 'researcherCategory.selectResearcherCategory'}}
+  {{/link-to}}
+{{/md-navbar}}
+
+{{outlet}}

@@ -13,6 +13,11 @@ Router.map(function() {
     this.route('addResearchGroup');
   });
   this.route('addpublication');
+  this.route('researcherCategory', function() {
+    this.route('addResearcherCategory');
+    this.route('modifyResearcherCategory');
+    this.route('selectResearcherCategory');
+  });
 });
 
 export default Router;
