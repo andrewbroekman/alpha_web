@@ -161,3 +161,13 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.labeledinput .right input.valid {
+    border-bottom: 0px solid rgba(black, 0.8);
+    box-shadow:  rgba(black, 0.4) 0px 1px 0px 0px;
+}
+
+.labeledinput .right input:focus {
+    border-bottom: 0px solid rgba(black, 0.8);
+    box-shadow:  rgba($accent, 0.87) 0px 2px 0px 0px !important;
+}
