@@ -158,6 +158,11 @@ body {
     color: rgba(white, 0.45)
 }
 
+.headerinput label.active {
+    top: 20px;
+    font-size: 13px;
+}
+
 .tallnav {
     min-height: 64px+80px;
     padding-top: 64px;
