@@ -12,6 +12,7 @@ Router.map(function() {
     this.route('reactivateResearchGroup');
     this.route('addResearchGroup');
   });
+  this.route('addpublication');
 });
 
 export default Router;
