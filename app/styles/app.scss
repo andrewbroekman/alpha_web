@@ -133,3 +133,108 @@ body {
 .appcontentactive {
     margin-left: $sidenavwidth;
 }
+
+.headerinput input {
+    font-size: 38px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    min-height: 50px;
+    color: white;
+}
+
+.headerinput input.valid {
+    border-bottom: 1px solid rgba(white, 0.3);
+    box-shadow:  rgba(white, 0.3) 0px 1px 0px 0px;
+}
+
+.headerinput input:focus {
+    border-bottom: 1px solid rgba($accent, 0.87) !important;
+    box-shadow:  rgba($accent, 0.87) 0px 1px 0px 0px !important;
+}
+
+.headerinput label {
+    top: 25px;
+    font-size: 25px;
+    color: rgba(white, 0.45)
+}
+
+.headerinput label.active {
+    top: 20px;
+    font-size: 13px;
+}
+
+.tallnav {
+    min-height: 64px+80px;
+    padding-top: 64px;
+}
+
+.tallnavtitlediv {
+    min-height: 80px;
+    max-height: 80px;
+    bottom: 0px;
+}
+
+.tallnavtitle {
+    position: absolute;
+    top: 37px;
+    padding-left: 82px;
+    padding-right: 82px;
+    width: 100vw;
+}
+
+.labeledinput {
+    min-height: 50px;
+    margin-top: -10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.labeledinput .left {
+    float:left;
+    min-width: 20%;
+}
+
+.labeledinput .left h5 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 13px;
+}
+
+.labeledinput .right {
+    float:right;
+    min-width: 60%;
+}
+
+.labeledinput .right .input-field, .labeledinput .right input {
+    margin: 0;
+    padding: 0;
+}
+
+.labeledinput .right input.valid {
+    border-bottom: 0px solid rgba(black, 0.8);
+    box-shadow:  rgba(black, 0.4) 0px 1px 0px 0px;
+}
+
+.labeledinput .right input:focus {
+    border-bottom: 0px solid rgba(black, 0.8);
+    box-shadow:  rgba($accent, 0.87) 0px 2px 0px 0px !important;
+}
+
+.labeledinput .right .red-text {
+    display: none;
+}
+
+.centercontent {
+    max-width: 860px;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+.addpubbuttons {
+    margin-top: 40px;
+    float:right;
+}
+
+.addpubbuttons .btn {
+    margin-left: 15px;
+}

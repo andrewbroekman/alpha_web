@@ -1,0 +1,63 @@
+{{navigation-component-tall label='Publication title' previousPage='navexample'}}
+
+<div class="centercontent">
+    {{#left-labeled-input label='Lifecycle state'}}
+        {{md-select 
+            content=frameworks
+            prompt="In progress"
+            optionLabelPath="content.value"
+            optionValuePath="content" 
+            class="col s12 compact"}}
+    {{/left-labeled-input}}
+    <br/>
+    {{#left-labeled-input label='Reason for state'}}
+        {{md-input  
+            class="col s12 compact" 
+            validate=false}}
+    {{/left-labeled-input}}
+    <br/>
+    {{#left-labeled-input label='Publication type'}}
+        {{md-select 
+            content=frameworks
+            prompt="High-impact journal"
+            optionLabelPath="content.value"
+            optionValuePath="content" 
+            class="col s12 compact"}}
+    {{/left-labeled-input}}
+    <br/>
+    {{#left-labeled-input label='Publication target name'}}
+        {{md-input  
+            class="col s12 compact" 
+            validate=false}}
+    {{/left-labeled-input}}
+    <br/>
+    {{#left-labeled-input label='Publication target website'}}
+        {{md-input  
+            class="col s12 compact" 
+            validate=false}}
+    {{/left-labeled-input}}
+    <br/>
+    {{#left-labeled-input label='Members'}}
+        {{md-input 
+            value="0 members selected" 
+            readonly=true
+            class="col s12 compact" 
+            validate=false}}
+    {{/left-labeled-input}}
+    <br/>
+    {{#left-labeled-input label='Envisioned completion date'}}
+        {{md-input-date 
+            value="2016/04/15" 
+            class="col s12"}}
+    {{/left-labeled-input}}
+    <br/>
+    <div class="addpubbuttons">
+        {{md-btn text='Cancel'
+	        class='teal'}}
+        {{md-btn text='Save'
+	        class='teal'}}
+    </div>
+</div>
+
+{{!-- ember-cli-materialize modal container --}}
+{{md-modal-container}}
