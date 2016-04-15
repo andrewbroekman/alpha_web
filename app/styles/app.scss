@@ -142,6 +142,16 @@ body {
     color: white;
 }
 
+.headerinput input.valid {
+    border-bottom: 1px solid rgba(white, 0.3);
+    box-shadow:  rgba(white, 0.3) 0px 1px 0px 0px;
+}
+
+.headerinput input:focus {
+    border-bottom: 1px solid rgba($accent, 0.87) !important;
+    box-shadow:  rgba($accent, 0.87) 0px 1px 0px 0px !important;
+}
+
 .headerinput label {
     top: 25px;
     font-size: 25px;
