@@ -134,6 +134,11 @@ body {
     margin-left: $sidenavwidth;
 }
 
+.tallnav {
+    min-height: 64px+80px;
+    padding-top: 64px;
+}
+
 .labeledinput {
     min-height: 50px;
     margin-top: -10px;
