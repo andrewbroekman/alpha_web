@@ -7,6 +7,8 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('navexample');
+  this.route('reporting');
+  this.route('notification');
   this.route('researchGroup', function() {
     this.route('suspendResearchGroup');
     this.route('reactivateResearchGroup');
