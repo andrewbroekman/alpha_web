@@ -29,6 +29,19 @@ export default function() {
         ]
     };
   });
+  
+  this.get('/groupassociations', function() {
+    return {
+        data: [{
+            type: 'groupassociation',
+            id: 1,
+            "attributes": {
+                startDate: '01-10-2015', endDate: '01-10-2015', ResearchGroupAssociationType: [{name:'a'},{name:'b'}]
+            }
+        }
+        ]
+    };
+  });
   // These comments are here to help you get started. Feel free to delete them.
 
   /*

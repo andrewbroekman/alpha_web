@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
 	this.route('home',{path: '/'});
 	this.route('persons');
+	this.route('groupassociations');
 	this.route('navexample');
 	this.route('researchGroup', function() {
 		this.route('suspendResearchGroup');

@@ -1,0 +1,18 @@
+{{#md-table content=content class='bordered centered responsive-table' as |row|}}
+		{{#md-table-col row=row key='startDate' header='StartDate'}}
+			{{row.startDate}}
+		{{/md-table-col}}
+
+		{{#md-table-col row=row key='endDate' header='endDate'}}
+			{{row.endDate}}
+		{{/md-table-col}}
+
+		{{#md-table-col row=row key='ResearchGroupAssociationType' header='ResearchGroupAssociationType'}}
+			{{md-select content=row.ResearchGroupAssociationType
+				value=name
+				label="Research Group Association Type"
+				prompt="Please choose..."
+				optionLabelPath="content.name"
+				optionValuePath="content" class="col s12"}}
+		{{/md-table-col}}
+{{/md-table}}

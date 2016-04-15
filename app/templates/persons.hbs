@@ -38,7 +38,7 @@
 		{{/md-table-col}}
 
 		{{#md-table-col row=row key='researchGroup' header='Research group association'}}
-			{{md-btn class='teal white-text' text='View' action="OpenModel"}}
+			{{#link-to 'groupassociations'}}{{md-btn class='teal white-text' text='View'}}{{/link-to}}
 		{{/md-table-col}}
 	{{/md-table}}
 	
