@@ -134,6 +134,14 @@ body {
     margin-left: $sidenavwidth;
 }
 
+.headerinput input {
+    font-size: 38px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    min-height: 50px;
+    color: white;
+}
+
 .tallnav {
     min-height: 64px+80px;
     padding-top: 64px;
