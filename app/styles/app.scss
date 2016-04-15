@@ -133,3 +133,10 @@ body {
 .appcontentactive {
     margin-left: $sidenavwidth;
 }
+
+.labeledinput {
+    min-height: 50px;
+    margin-top: -10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
