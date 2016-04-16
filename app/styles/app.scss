@@ -24,6 +24,15 @@
     -ms-flex-direction: $spec;
     flex-direction: $spec;
 }
+
+@mixin flex-basis($spec...) {
+    -webkit-flex-basis: $spec;
+    -moz-flex-basis: $spec;
+    -o-flex-basis: $spec;
+    -ms-flex-basis: $spec;
+    flex-basis: $spec;
+}
+
 $sidenavwidth: 260px;
 $sidenavblurdistance: 25px;
 $accent: #00bfa5;
