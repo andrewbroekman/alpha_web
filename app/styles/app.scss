@@ -238,3 +238,31 @@ body {
 .addpubbuttons .btn {
     margin-left: 15px;
 }
+
+.featureslist {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.featureslist p {
+    margin-left: 12px;
+}
+
+.featureslist span {
+    color: darkgray;
+    font-style: italic;
+}
+
+.featureslist .btn {
+    margin-right: 42px;
+    float: right;
+    margin-top: 10px;
+}
+
+.featureslist div {
+    margin-bottom: 80px;
+}

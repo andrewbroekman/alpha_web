@@ -20,6 +20,7 @@ Router.map(function() {
     this.route('modifyResearcherCategory');
     this.route('selectResearcherCategory');
   });
+  this.route('testing');
 });
 
 export default Router;
