@@ -11,6 +11,22 @@
                 {{md-btn text='Link to feature starting page' class='teal'}}
             {{/link-to}}    
         </div>
+        
+        <div>
+            <h5>Add publication</h5>
+            <p>
+                <span>This feature creates and sends a request object to create a new publication</span><br/>
+                To access this feature, normally you would navigate to the 
+                <strong>Publications</strong> page and click on the "add" floating action button, but since the <strong>Publications</strong> page does not yet
+                exist at the time of writing, the only way to access this feature is through the direct link to the page. Note that because of this, the button
+                below would normally link to the <strong>Publications</strong> page, so the tester would have to go through the same flow of steps to use the 
+                feature as the user would, but now links to the <strong>Add Publication</strong> page.
+            </p>    
+            
+            {{#link-to 'addpublication'}}
+                {{md-btn text='Go to Publications' class='teal'}}
+            {{/link-to}}    
+        </div>
     </div>
     
     
