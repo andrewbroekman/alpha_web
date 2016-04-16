@@ -59,6 +59,22 @@ body {
     overflow: hidden;
 }
 
+.page {
+    width: 100vw;
+    height: 100vh;
+    display:-webkit-flex;
+    display:-ms-flex;
+    display:-o-flex;
+    display:-moz-flex;
+    display:flex;
+    @include flex-direction(column);
+    justify-content: -webkit-flex-start;
+    justify-content: -ms-flex-start;
+    justify-content: -o-flex-start;
+    justify-content: -moz-flex-start;
+    justify-content: flex-start;
+}
+
 .navbar {
     background-color: #3f51b5;
     min-height: 64px;
