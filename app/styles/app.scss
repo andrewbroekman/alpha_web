@@ -17,6 +17,13 @@
     box-shadow: $spec;
 }
 
+@mixin flex-direction($spec...) {
+    -webkit-flex-direction: $spec;
+    -moz-flex-direction: $spec;
+    -o-flex-direction: $spec;
+    -ms-flex-direction: $spec;
+    flex-direction: $spec;
+}
 $sidenavwidth: 260px;
 $sidenavblurdistance: 25px;
 $accent: #00bfa5;
