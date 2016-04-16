@@ -145,6 +145,7 @@ body {
 .appcontent {
     margin-left: 0px;
     @include transition(margin-left 0.30s ease 0.15s);
+    overflow-y: auto;
 }
 
 .appcontentactive {
@@ -261,7 +262,6 @@ body {
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    overflow-y: auto;
     height: 100%;
 }
 
