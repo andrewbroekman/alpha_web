@@ -1,29 +1,32 @@
-<nav class="navbar">
-    <div id="navtitlecontainer" class="navtitlecontainer">
-        <p class="navtitle">{{title}}</p>
+<div class="page">
+    <nav class="navbar">
+        <div id="navtitlecontainer" class="navtitlecontainer">
+            <p class="navtitle">{{title}}</p>
+        </div>
+    </nav>
+
+    <div id="appcontent" class="appcontent">
+        {{yield}}
     </div>
-</nav>
 
-<div id="appcontent" class="appcontent">
-    {{yield}}
-</div>
+    {{#view "navoverlayclickable"}}
+        <div id="navoverlay" data-ember-modal-dialog-overlay="" class="navoverlay lean-modal"></div>
+    {{/view}}
 
-{{#view "navoverlayclickable"}}
-    <div id="navoverlay" data-ember-modal-dialog-overlay="" class="navoverlay lean-modal"></div>
-{{/view}}
-
-<div id="sidenav" class="sidenav">
-    <div class="sidenavoptions">
-        {{navigation-item itemname="Navigation example" linkname="navexample" pageTitle=title}}
-        {{navigation-item itemname="Add publication" linkname="addpublication" pageTitle=title}}
-        {{navigation-item itemname="List of testable features" linkname="testing" pageTitle=title}}
-        <!-- REMEMBER TO SET THE ITEMNAME AND LINKNAME PROPERTIES OF YOUR NAVIGATION ITEM. The
-        itemname property is the text that will be displayed in the sidenav, and should correspond
-        to the title of your page's template file's navigation-component, and the linkname
-        is the name of your page's route, as set up in router.js -->
+    <div id="sidenav" class="sidenav">
+        <div class="sidenavoptions">
+            {{navigation-item itemname="Navigation example" linkname="navexample" pageTitle=title}}
+            {{navigation-item itemname="Add publication" linkname="addpublication" pageTitle=title}}
+            {{navigation-item itemname="List of testable features" linkname="testing" pageTitle=title}}
+            <!-- REMEMBER TO SET THE ITEMNAME AND LINKNAME PROPERTIES OF YOUR NAVIGATION ITEM. The
+            itemname property is the text that will be displayed in the sidenav, and should correspond
+            to the title of your page's template file's navigation-component, and the linkname
+            is the name of your page's route, as set up in router.js -->
+        </div>
     </div>
-</div>
 
-{{#view "naviconclickable"}}
-    <i class="mdi-navigation-menu navicon" id="navicon"></i>
-{{/view}}
+    {{#view "naviconclickable"}}
+        <i class="mdi-navigation-menu navicon" id="navicon"></i>
+    {{/view}}
+
+</div>
