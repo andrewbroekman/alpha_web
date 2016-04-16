@@ -17,6 +17,22 @@
     box-shadow: $spec;
 }
 
+@mixin flex-direction($spec...) {
+    -webkit-flex-direction: $spec;
+    -moz-flex-direction: $spec;
+    -o-flex-direction: $spec;
+    -ms-flex-direction: $spec;
+    flex-direction: $spec;
+}
+
+@mixin flex-basis($spec...) {
+    -webkit-flex-basis: $spec;
+    -moz-flex-basis: $spec;
+    -o-flex-basis: $spec;
+    -ms-flex-basis: $spec;
+    flex-basis: $spec;
+}
+
 $sidenavwidth: 260px;
 $sidenavblurdistance: 25px;
 $accent: #00bfa5;
@@ -43,9 +59,26 @@ body {
     overflow: hidden;
 }
 
+.page {
+    width: 100vw;
+    height: 100vh;
+    display:-webkit-flex;
+    display:-ms-flex;
+    display:-o-flex;
+    display:-moz-flex;
+    display:flex;
+    @include flex-direction(column);
+    justify-content: -webkit-flex-start;
+    justify-content: -ms-flex-start;
+    justify-content: -o-flex-start;
+    justify-content: -moz-flex-start;
+    justify-content: flex-start;
+}
+
 .navbar {
     background-color: #3f51b5;
     min-height: 64px;
+    @include flex-basis(auto);
 }
 
 .navoverlay {
@@ -128,6 +161,7 @@ body {
 .appcontent {
     margin-left: 0px;
     @include transition(margin-left 0.30s ease 0.15s);
+    overflow-y: auto;
 }
 
 .appcontentactive {
@@ -244,7 +278,6 @@ body {
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    overflow-y: auto;
     height: 100%;
 }
 
