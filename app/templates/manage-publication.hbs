@@ -4,16 +4,15 @@
       <div class="row"><br>
 		<div class="row">
 			<div class="input-field col s6">
-				<select multiple>
-				  <option value="" disabled selected>Select a Publication</option>
-				  <option value="1">Publication 1</option>
-				  <option value="2">Publication 2</option>
-				  <option value="3">Publication 3</option>
-				</select>
-				<label>Current Publications</label>
+			{{md-select content=content
+				value=name
+				label="Current Publications"
+				prompt="Please choose..."
+				optionLabelPath="content.name"
+				optionValuePath="content" class="col s12"}}
+				
 			</div>
-		</div>
-		<br><hr><br>
+		</div><hr><br>
 		
 		<div class="row">
 			<h5>Publication Details</h5>
@@ -30,23 +29,25 @@
 			</div>
 			<br>
 			<h6>Publication Categories</h6><br>
+			
 			<div class="row">
-				<div class="input-field col s4">
-					<select multiple>
-					  <option value="" disabled selected>Choose your option</option>
-					  <option value="1">Category 1</option>
-					  <option value="2">Category 2</option>
-					  <option value="3">Category 3</option>
-					</select>
-					<label>Add Category</label>
+				<div class="input-field col s6" >
+				{{md-select content=row.categories
+					value=name
+					label="Add Category"
+					prompt="Please choose..."
+					optionLabelPath="content.name"
+					optionValuePath="content" class="col s12"}}					
 				</div>
 			</div>
+			
 			<div class="row">
-				<div class="input-field col s4">
-					<input id="input_text" type="text" length="15">
+				<div class="input-field col s6">
+					<input id="input_text" type="text" length="25">
 					<label for="input_text">Add Custom Category</label>
 				</div>
-			</div>			
+			</div>	
+			
 			<br>
 			<h6>Publication Status</h6>
 			<div class="row">

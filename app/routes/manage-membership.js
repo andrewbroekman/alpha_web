@@ -2,10 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
 	model() {
-        var publications = this.store.findAll('publication'); // => GET /publications
-        return publications;
-    }
+        var members = this.store.findAll('publication'); // => GET /members
+        return members;
+    }	
 });
-$(document).ready(function() {
-    $('select').material_select();
-  });

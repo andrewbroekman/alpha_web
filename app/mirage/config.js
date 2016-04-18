@@ -1,35 +1,4 @@
 export default function() {
-	this.get('/members', function() {
-    return {
-        data: [{
-            type: 'member',
-            id: 1,
-            "attributes": {
-                name: 'Marie', surname: 'Curie', email: 'mariecurie@loremipsum.com', researcherCategory: [{name:'Prof'},{name:'Student'}]
-            }
-        },
-
-        {
-            type: 'member',
-            id: 2,
-            "attributes": {
-                name: 'Mae', surname: 'Jemison', email: 'mae@loremipsum.com', researcherCategory: [{name:'Prof'},{name:'Student'}]
-            }
-        },
-
-        {
-            type: 'member',
-            id: 3,
-            "attributes": {
-                name: 'Albert', surname:'Hofmann', email: 'albert@loremipsum.com', researcherCategory: [{name:'Prof'},{name:'Student'}]
-            }
-        }
-
-
-        ]
-    };
-  });
-
     this.get('/publications', function() {
     return {
         data: [
@@ -37,7 +6,8 @@ export default function() {
             type: 'publication',
             id: 1,
             "attributes": {
-                name: 'Publication 1'
+			name: 'Advanced A.I', pubStatus:'1', categories: [{name:'xxxx'}, {name:'bbbb'}]
+				
             }
         },
 
@@ -45,14 +15,51 @@ export default function() {
             type: 'publication',
             id: 2,
             "attributes": {
-                name: 'Publication 2'
+                name: 'Biokinetics', pubStatus:'1', categories: [{name:'xxxx'}, {name:'bbbb'}]
+            }
+        },
+
+        {
+            type: 'publication',
+            id: 3,
+            "attributes": {
+                name: 'Law', pubStatus:'0', categories: [{name:'xxxx'}, {name:'bbbb'}]
             }
         }
-
         ]
     };
   });
+  
+	this.get('/membership', function() {
+    return {
+        data: [
+        {
+            type: 'member',
+            id: 1,
+            "attributes": {
+                name: 'Advanced A.I', members: [{name:'Peter'},{name:'Sam'}]
+				
+            }
+        },
 
+        {
+            type: 'member',
+            id: 2,
+            "attributes": {
+                name: 'Biokinetics', members: [{name:'Peter2'},{name:'Sam2'}]
+            }
+        },
+
+        {
+            type: 'member',
+            id: 3,
+            "attributes": {
+                name: 'Law', members: [{name:'Peter2'},{name:'Sam2'}]
+            }
+        }
+        ]
+    };
+  });
   // These comments are here to help you get started. Feel free to delete them.
 
   /*
