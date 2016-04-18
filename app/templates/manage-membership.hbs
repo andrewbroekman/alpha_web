@@ -1,7 +1,8 @@
-{{#navigation-component title='Manage Publication' }}
+{{#navigation-component title='Manage Membership' }}
 <div class="row">
     <form class="col s12">
       <div class="row"><br>
+		
 		<div class="row">
 			<div class="input-field col s6">
 			{{md-select content=content
@@ -10,76 +11,49 @@
 				prompt="Please choose..."
 				optionLabelPath="content.name"
 				optionValuePath="content" class="col s12"}}
-				
 			</div>
 		</div><hr><br>
 		
 		<div class="row">
 			<h5>Publication Details</h5>
 			<div class="row">
-				<label for="pubType">Current Publication Categories</label><br>
+				<label for="pubType">Current Group Members</label><br>
 				<div class="chip">
-					Research
+					Stephen
 					<i class="material-icons">close</i>
 				</div>
 				<div class="chip">
-					A.I
+					James
 					<i class="material-icons">close</i>
 				</div>
-			</div>
-			<br>
-			<h6>Publication Categories</h6><br>
+				<div class="chip">
+					Simon
+					<i class="material-icons">close</i>
+				</div>
+			</div><br>
 			
-			<div class="row">
-				<div class="input-field col s6" >
-				{{md-select content=row.categories
+			<h6>Group Members</h6><br>			
+			<div class="row" >
+				<div class="input-field col s6">
+				{{md-select content=row.members
 					value=name
-					label="Add Category"
+					label="Add Group Member"
 					prompt="Please choose..."
 					optionLabelPath="content.name"
 					optionValuePath="content" class="col s12"}}					
 				</div>
 			</div>
 			
-			<div class="row">
+			<div class="row">				
 				<div class="input-field col s6">
 					<input id="input_text" type="text" length="25">
-					<label for="input_text">Add Custom Category</label>
-				</div>
-			</div>	
-			
-			<br>
-			<h6>Publication Status</h6>
-			<div class="row">
-			  <div class="input-field col s6">
-				  <div class="switch">
-					<label>
-					  Inactive
-					  <input type="checkbox">
-					  <span class="lever"></span>
-					  Active
-					</label>
-				  </div>
-			  </div>
-			</div>
-			<br><br>
-			
-			<h6>Dates</h6><br>
-			<div class="row">
-				<div class="col s3">
-					<label>Start Date</label>
-					<input type="date" class="datepicker">
-				</div>
-				<div class="col s3">
-					<label>End Date</label>
-					<input type="date" class="datepicker">
+					<label for="input_text">Add Group Member </label>
 				</div>
 			</div>
-		</div>  
-	  <br>     
+		</div>
+      </div>
 	  <button class="btn waves-effect waves-light blue" type="submit" name="action">Submit
 	  <i class="material-icons right">send</i></button>
-	  </div>
     </form>
 </div>
 {{/navigation-component }}
